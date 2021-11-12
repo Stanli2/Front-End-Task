@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Kings&family=Pacifico&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    box-sizing: border-box;
+    font-family:  'Courgette', cursive;
+    letter-spacing: 0.5px;
+    background-color: #070e75;
+}
+.table_head{
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'Courgette', cursive;
+    color: rgba(230, 220, 220, 0.959);
+    font-size: 3rem;
+    text-decoration: underline;
+
+}
+
+#grid-wrapper, #halogen, #actinide{
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    gap: 1px;
+    width: 1175px;
+    
+}
+h2{
+    font-size: 2rem;
+    font-weight: bold;
+}
+p:first-child{
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#grid-wrapper{
+    margin: 0px auto 15px;
+}
+
+#halogen, #actinide{
+    width: 980px;
+    grid-gap: 1px;
+    margin: 0 auto;
+}
+
+.cell2{
+    grid-column-start: 18;
+}
+
+.cell5, .cell13{
+    grid-column-start: 13;
+}
+
+.cell57, .cell89{
+    grid-column-start: 3;
+}
+
+
+
+#grid-wrapper div, #halogen div, #actinide div{
+    height: 65px;
+    width: 65px;
+    text-align: center;
+}
+
+#color_code{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    width: 1000px;
+    margin: 20px auto 0;
+    gap: 10px;
+}
+
+#color_code div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 55px;
+    width: 85px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Courgette', cursive;
+    color: #333;
+    overflow: hidden;
+}
+
+#color_code div p{
+    font-weight: bold;
+    font-size: 1.4rem;
+    padding: 1px;
+}
+
+.alkali{
+    background-color: #642334;
+    background-image: linear-gradient(326deg, #88243f 0%, #b63d1b 74%);
+
+}
+
+.alkaline{
+    background-color: #da2326;
+    background-image: linear-gradient(315deg, #dd1f22 0%, #caaa08 74%);
+}
+
+.transition{
+    background-color: #c4c12a;
+    background-image: linear-gradient(315deg, #ce891b 0%, #cbce09 74%);
+}
+
+.basic{
+    background-color: #4d79b8;
+    background-image: linear-gradient(315deg, #5b92df 0%, #678dce 74%);
+}
+        
+.semimetal{
+    background-color: #042f4e;
+    background-image: linear-gradient(315deg, #053353 0%, #e6da03 74%);
+    }
+        
+.nonmetal{
+    background-color: #5cd492;
+    background-image: linear-gradient(315deg, #49a171 0%, #5049a5 74%);
+        }
+
+.halogen{
+    background-color: #4d8eeb;
+    background-image: linear-gradient(315deg, #3878d3 0%, #359197 74%);
+        }
+        
+.noble{
+    background-color: #21d190;
+    background-image: linear-gradient(315deg, #21d190 0%, #d65bca 74%);
+        }
+        
+.lanthanide{
+    background-color: #ccc37c;
+    background-image: linear-gradient(315deg, #dbcd5e 0%, #d844b0 74%);      
+        }
+.actinide{
+    background-color: #cf625c;
+    background-image: linear-gradient(315deg, #916f6d 0%, #c81f70 74%);
+}
